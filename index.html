@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamForge Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="sidebar">
+        <h1>DreamForge Studio</h1>
+        <p>Your digital workshop. Click the buttons to bring your ideas to life.</p>
+        <div class="control-group">
+            <button id="next-head-btn">Next Head</button>
+            <button id="next-torso-btn">Next Torso</button>
+            <button id="next-legs-btn">Next Legs</button>
+        </div>
+        <hr>
+        <div class="control-group">
+            <button id="export-stl-btn">Export to .STL</button>
+            <p class="small-text">Saves a 3D printable file of your creation.</p>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
